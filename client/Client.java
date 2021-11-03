@@ -32,16 +32,16 @@ public class Client {
 		}
 		
 		try {
-	     	while (true) {
-	     		System.out.print("Invia un messaggio: ");
-		    	String msg_out = stdin.nextLine();
-		    	System.out.println("Messaggio inviato");
-		    	out.println(msg_out);
-		    	out.flush();
-		    	
-		    	String msg_in = in.nextLine();
-		    	System.out.println("Ricevuto messaggio " + msg_in);
-	     	}
+			while (true) {
+				System.out.print("Invia un messaggio: ");
+				String msg_out = stdin.nextLine();
+				System.out.println("Messaggio inviato");
+				out.println(msg_out);
+				out.flush();
+
+				String msg_in = in.nextLine();
+				System.out.println("Ricevuto messaggio " + msg_in);
+			}
 		} catch (NoSuchElementException e) {
 			System.out.println("Connessione interrotta");
 		}
